@@ -121,7 +121,7 @@ export default function Portfolio() {
               variant="outline"
               size="lg"
               className="gap-2 bg-transparent hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105 border-2 border-blue-600 text-blue-600"
-              onClick={() => window.open("../Omar Monir Kamal -Backend Developer.pdf", "_blank")}
+              onClick={() => window.open("./Omar Monir Kamal -Backend Developer.pdf", "_blank")}
             >
               <Download className="w-5 h-5" />
               Resume
