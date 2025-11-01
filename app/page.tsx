@@ -18,6 +18,9 @@ import {
   Zap,
   Download,
   ArrowRight,
+  Award,
+  Users,
+  TrendingUp,
 } from "lucide-react"
 
 export default function Portfolio() {
@@ -28,7 +31,7 @@ export default function Portfolio() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="font-serif font-bold text-xl bg-gradient-to-r from-accent to-blue-600 bg-clip-text text-transparent">
-              Omar Monir Kamal
+              Omar Monir Elseofy
             </div>
             <div className="hidden md:flex space-x-8">
               <button
@@ -74,13 +77,15 @@ export default function Portfolio() {
 
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <h1 className="font-serif font-bold text-5xl md:text-7xl bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 bg-clip-text text-transparent mb-6 animate-fade-in-up">
-            Omar Monir Kamal
+            Omar Monir Elseofy
           </h1>
           <p className="text-xl md:text-3xl text-muted-foreground mb-8 animate-fade-in-up delay-200">
             Backend Developer | Software Engineer | Computer Science Student
           </p>
           <p className="text-lg md:text-xl text-secondary mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in-up delay-300">
-            Results-driven Backend Developer specializing in ASP.NET Core and scalable web applications.
+            Highly motivated Backend Developer with over one year of hands-on experience in ASP.NET Core and C#
+            development. Skilled in designing, developing, and deploying scalable web applications using Repository and
+            Service patterns.
           </p>
 
           <div className="flex flex-wrap justify-center gap-6 mb-12 animate-fade-in-up delay-400">
@@ -90,7 +95,7 @@ export default function Portfolio() {
             </div>
             <div className="flex items-center gap-2 text-muted-foreground bg-blue-50/50 backdrop-blur-sm px-4 py-2 rounded-full border border-blue-200/50">
               <Phone className="w-4 h-4 text-blue-600" />
-              <span>+20 1015901207</span>
+              <span>01015901207</span>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground bg-blue-50/50 backdrop-blur-sm px-4 py-2 rounded-full border border-blue-200/50">
               <Mail className="w-4 h-4 text-blue-600" />
@@ -103,7 +108,7 @@ export default function Portfolio() {
               variant="outline"
               size="lg"
               className="gap-2 bg-transparent hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105 border-2 border-blue-600 text-blue-600"
-              onClick={() => window.open("https://www.linkedin.com/in/omarmonir/", "_blank")}
+              onClick={() => window.open("https://www.linkedin.com/in/omarmonir", "_blank")}
             >
               <Linkedin className="w-5 h-5" />
               LinkedIn
@@ -112,7 +117,7 @@ export default function Portfolio() {
               variant="outline"
               size="lg"
               className="gap-2 bg-transparent hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105 border-2 border-blue-600 text-blue-600"
-              onClick={() => window.open("https://github.com/omarmonir", "_blank")}
+              onClick={() => window.open("https://github.com/OmarMonir", "_blank")}
             >
               <Github className="w-5 h-5" />
               GitHub
@@ -121,7 +126,7 @@ export default function Portfolio() {
               variant="outline"
               size="lg"
               className="gap-2 bg-transparent hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105 border-2 border-blue-600 text-blue-600"
-              onClick={() => window.open("./Omar Monir Kamal -Backend Developer.pdf", "_blank")}
+              onClick={() => window.open("/resume.pdf", "_blank")}
             >
               <Download className="w-5 h-5" />
               Resume
@@ -150,14 +155,19 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                With over 1 year of hands-on experience in ASP.NET Core and C#, I specialize in building efficient,
-                secure, and scalable backend systems. My expertise spans RESTful APIs, Clean Architecture, JWT
-                Authentication, and Entity Framework.
+                Highly motivated Backend Developer with over one year of hands-on experience in ASP.NET Core and C#
+                development. Skilled in designing, developing, and deploying scalable web applications using Repository
+                and Service patterns.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm passionate about creating robust backend solutions that power modern web applications. Currently
-                pursuing my B.Sc. in Computer Science at Fayoum University, I combine academic knowledge with practical
-                industry experience.
+                Demonstrated expertise in building secure RESTful APIs, implementing JWT-based authentication, and
+                optimizing database performance with Entity Framework Core. I have a solid understanding of
+                Object-Oriented Programming (OOP), Software Development Life Cycle (SDLC), and Agile methodologies.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Currently pursuing my B.Sc. in Math & Computer Science at Fayoum University, I combine academic
+                knowledge with practical industry experience to create robust and efficient backend solutions that power
+                modern web applications.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-6">
@@ -200,11 +210,11 @@ export default function Portfolio() {
           <h2 className="font-serif font-bold text-4xl md:text-5xl text-center mb-16 bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">
             Technical Skills
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="group hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 hover:border-blue-500/50 bg-gradient-to-br from-card via-card to-blue-50/20">
               <CardHeader className="pb-4">
                 <CardTitle className="text-xl font-bold text-center bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">
-                  Backend
+                  Backend Development
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -219,19 +229,25 @@ export default function Portfolio() {
                     variant="secondary"
                     className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
                   >
-                    C#
+                    C# | OOP
                   </Badge>
                   <Badge
                     variant="secondary"
                     className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
                   >
-                    Web APIs
+                    Web API
                   </Badge>
                   <Badge
                     variant="secondary"
                     className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
                   >
                     MVC
+                  </Badge>
+                  <Badge
+                    variant="secondary"
+                    className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    .NET Framework
                   </Badge>
                 </div>
               </CardContent>
@@ -240,7 +256,7 @@ export default function Portfolio() {
             <Card className="group hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 hover:border-blue-500/50 bg-gradient-to-br from-card via-card to-blue-50/20">
               <CardHeader className="pb-4">
                 <CardTitle className="text-xl font-bold text-center bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">
-                  Databases
+                  Databases & ORM
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -255,13 +271,19 @@ export default function Portfolio() {
                     variant="secondary"
                     className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
                   >
+                    LINQ
+                  </Badge>
+                  <Badge
+                    variant="secondary"
+                    className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
                     Entity Framework
                   </Badge>
                   <Badge
                     variant="secondary"
                     className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
                   >
-                    Repository Pattern
+                    EF Core
                   </Badge>
                 </div>
               </CardContent>
@@ -270,11 +292,17 @@ export default function Portfolio() {
             <Card className="group hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 hover:border-blue-500/50 bg-gradient-to-br from-card via-card to-blue-50/20">
               <CardHeader className="pb-4">
                 <CardTitle className="text-xl font-bold text-center bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">
-                  Languages
+                  Programming Languages
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
+                  <Badge
+                    variant="secondary"
+                    className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    C++
+                  </Badge>
                   <Badge
                     variant="secondary"
                     className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
@@ -297,7 +325,7 @@ export default function Portfolio() {
                     variant="secondary"
                     className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
                   >
-                    C++
+                    JavaScript
                   </Badge>
                 </div>
               </CardContent>
@@ -306,7 +334,49 @@ export default function Portfolio() {
             <Card className="group hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 hover:border-blue-500/50 bg-gradient-to-br from-card via-card to-blue-50/20">
               <CardHeader className="pb-4">
                 <CardTitle className="text-xl font-bold text-center bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">
-                  Tools & Methods
+                  Core Concepts
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  <Badge
+                    variant="secondary"
+                    className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    Problem Solving
+                  </Badge>
+                  <Badge
+                    variant="secondary"
+                    className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    Data Structure
+                  </Badge>
+                  <Badge
+                    variant="secondary"
+                    className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    Algorithms
+                  </Badge>
+                  <Badge
+                    variant="secondary"
+                    className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    SOLID
+                  </Badge>
+                  <Badge
+                    variant="secondary"
+                    className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    Design Patterns
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 hover:border-blue-500/50 bg-gradient-to-br from-card via-card to-blue-50/20">
+              <CardHeader className="pb-4">
+                <CardTitle className="text-xl font-bold text-center bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">
+                  Development Tools
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -333,19 +403,55 @@ export default function Portfolio() {
                     variant="secondary"
                     className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
                   >
-                    Swagger/OpenAPI
+                    HTML5 | CSS3
                   </Badge>
                   <Badge
                     variant="secondary"
                     className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
                   >
-                    Clean Architecture
+                    Bootstrap
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 hover:border-blue-500/50 bg-gradient-to-br from-card via-card to-blue-50/20">
+              <CardHeader className="pb-4">
+                <CardTitle className="text-xl font-bold text-center bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">
+                  Soft Skills
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  <Badge
+                    variant="secondary"
+                    className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    Leadership
                   </Badge>
                   <Badge
                     variant="secondary"
                     className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
                   >
-                    SOLID
+                    Team Collaboration
+                  </Badge>
+                  <Badge
+                    variant="secondary"
+                    className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    Project Management
+                  </Badge>
+                  <Badge
+                    variant="secondary"
+                    className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    Agile
+                  </Badge>
+                  <Badge
+                    variant="secondary"
+                    className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    Communication
                   </Badge>
                 </div>
               </CardContent>
@@ -358,26 +464,42 @@ export default function Portfolio() {
       <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50/30 to-background">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-serif font-bold text-4xl md:text-5xl text-center mb-16 bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">
-            Featured Projects
+            Key Projects
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-4xl mx-auto">
             <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 border-2 hover:border-blue-500/50 bg-gradient-to-br from-card via-card to-blue-50/20 overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <CardHeader className="relative z-10">
-                <CardTitle className="flex items-center gap-2 text-lg group-hover:text-blue-600 transition-colors duration-300">
-                  Expert System for Student Affairs
-                  <ExternalLink className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+                <CardTitle className="flex items-center gap-2 text-2xl group-hover:text-blue-600 transition-colors duration-300">
+                  Alsofy Academy – Sports Academy Management System
+                  <button
+                    onClick={() => window.open("https://github.com/omarmonir/alsofy-academy", "_blank")}
+                    className="hover:text-blue-600 transition-colors"
+                  >
+                    <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                  </button>
                 </CardTitle>
-                <CardDescription className="text-muted-foreground">
-                  Role-based API system with JWT authentication and smart recommendations
+                <CardDescription className="text-lg text-muted-foreground">
+                  ASP.NET Core | C# | SQL Server | EF Core | JWT | QuestPDF | OfficeOpenXml
                 </CardDescription>
               </CardHeader>
-              <CardContent className="relative z-10">
-                <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
-                  Built a comprehensive student affairs management system with role-based access control, automated
-                  reporting, and intelligent recommendation engine for academic guidance.
+              <CardContent className="relative z-10 space-y-4">
+                <p className="text-muted-foreground leading-relaxed">
+                  Developed a comprehensive sports academy management system with multi-role backend, JWT
+                  authentication, and advanced reporting capabilities including PDF and Excel exports with multilingual
+                  support.
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <ul className="text-sm text-muted-foreground space-y-2 list-disc list-inside">
+                  <li>Designed and developed a multi-role backend system (Admin, Coach, Player, Super Admin)</li>
+                  <li>Implemented JWT authentication and role-based access control</li>
+                  <li>
+                    Built modular architecture with clean separation between Controllers, Services, and Repositories
+                  </li>
+                  <li>Developed dynamic PDF/Excel reporting engine with multilingual support (EN/AR)</li>
+                  <li>Implemented secure file management and storage</li>
+                  <li>Optimized SQL queries and API performance with Entity Framework Core</li>
+                </ul>
+                <div className="flex flex-wrap gap-2 pt-4">
                   <Badge
                     variant="outline"
                     className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
@@ -388,79 +510,7 @@ export default function Portfolio() {
                     variant="outline"
                     className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
                   >
-                    JWT
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
-                  >
-                    Entity Framework
-                  </Badge>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 border-2 hover:border-blue-500/50 bg-gradient-to-br from-card via-card to-blue-50/20 overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <CardHeader className="relative z-10">
-                <CardTitle className="flex items-center gap-2 text-lg group-hover:text-blue-600 transition-colors duration-300">
-                  E-Commerce Backend
-                  <ExternalLink className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
-                </CardTitle>
-                <CardDescription className="text-muted-foreground">
-                  Scalable RESTful API with payment integration and DDD principles
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="relative z-10">
-                <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
-                  Developed a robust e-commerce backend with Stripe payment integration, implementing Domain-Driven
-                  Design principles for maintainable and scalable architecture.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge
-                    variant="outline"
-                    className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
-                  >
-                    ASP.NET Core
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
-                  >
-                    Stripe API
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
-                  >
-                    DDD
-                  </Badge>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 border-2 hover:border-blue-500/50 bg-gradient-to-br from-card via-card to-blue-50/20 overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <CardHeader className="relative z-10">
-                <CardTitle className="flex items-center gap-2 text-lg group-hover:text-blue-600 transition-colors duration-300">
-                  Physics Lab Management
-                  <ExternalLink className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
-                </CardTitle>
-                <CardDescription className="text-muted-foreground">
-                  Equipment tracking system with dashboards and automated reports
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="relative z-10">
-                <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
-                  Created a comprehensive lab management system for tracking equipment, generating automated reports,
-                  and providing real-time dashboards for lab administrators.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge
-                    variant="outline"
-                    className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
-                  >
-                    ASP.NET Core
+                    JWT Authentication
                   </Badge>
                   <Badge
                     variant="outline"
@@ -472,7 +522,156 @@ export default function Portfolio() {
                     variant="outline"
                     className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
                   >
-                    Reporting
+                    Clean Architecture
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    QuestPDF
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 border-2 hover:border-blue-500/50 bg-gradient-to-br from-card via-card to-blue-50/20 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardHeader className="relative z-10">
+                <CardTitle className="flex items-center gap-2 text-2xl group-hover:text-blue-600 transition-colors duration-300">
+                  Expert System for Student Affairs
+                  <button
+                    onClick={() => window.open("https://github.com/omarmonir/Expert-system.git", "_blank")}
+                    className="hover:text-blue-600 transition-colors"
+                  >
+                    <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                  </button>
+                </CardTitle>
+                <CardDescription className="text-lg text-muted-foreground">
+                  ASP.NET Core | C# | SQL Server | EF Core | JWT | QuestPDF | OfficeOpenXml
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="relative z-10 space-y-4">
+                <p className="text-muted-foreground leading-relaxed">
+                  Designed and developed a comprehensive multi-role backend system for student affairs with JWT
+                  authentication, role-based access control, and dynamic reporting engine supporting advanced analytics.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-2 list-disc list-inside">
+                  <li>
+                    Multi-role backend system using ASP.NET Core Web API with JWT Authentication and role-based access
+                    (Student, Professor, Admin, Super Admin)
+                  </li>
+                  <li>
+                    Built modular architecture with clean separation between Controllers, Services, Repositories, and
+                    Models
+                  </li>
+                  <li>
+                    Implemented core academic operations: student management, enrollment, grades, attendance, schedules,
+                    and academic warnings
+                  </li>
+                  <li>
+                    Developed dynamic PDF/Excel reporting engine supporting course analytics, enrollment trends, and GPA
+                    summaries
+                  </li>
+                  <li>
+                    Integrated efficient querying with Entity Framework Core, reducing data processing time and
+                    enhancing performance
+                  </li>
+                  <li>
+                    Applied advanced validation and business rules for course registration, graduation eligibility, and
+                    prerequisite checks
+                  </li>
+                  <li>
+                    Collaborated with inference engine via RESTful endpoints for smart academic decisions and course
+                    recommendations
+                  </li>
+                </ul>
+                <div className="flex flex-wrap gap-2 pt-4">
+                  <Badge
+                    variant="outline"
+                    className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    ASP.NET Core
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    JWT Authentication
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    Entity Framework
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    Role-Based Access
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    PDF/Excel Reporting
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 border-2 hover:border-blue-500/50 bg-gradient-to-br from-card via-card to-blue-50/20 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardHeader className="relative z-10">
+                <CardTitle className="flex items-center gap-2 text-2xl group-hover:text-blue-600 transition-colors duration-300">
+                  E-Commerce Backend System
+                  <button
+                    onClick={() => window.open("https://github.com/omarmonir/ECommerceApplication.git", "_blank")}
+                    className="hover:text-blue-600 transition-colors"
+                  >
+                    <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                  </button>
+                </CardTitle>
+                <CardDescription className="text-lg text-muted-foreground">
+                  ASP.NET Core | Entity Framework | JWT | Stripe API
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="relative z-10 space-y-4">
+                <p className="text-muted-foreground leading-relaxed">
+                  Developed a robust and scalable e-commerce backend system with comprehensive payment integration and
+                  modern architectural patterns emphasizing performance and security.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-2 list-disc list-inside">
+                  <li>Developed scalable RESTful API with JWT authentication</li>
+                  <li>Reduced login processing time by 40% through optimized authentication flow</li>
+                  <li>Integrated Stripe payment gateway securely with comprehensive error handling</li>
+                  <li>Applied Domain-Driven Design principles for maintainable and scalable architecture</li>
+                  <li>Implemented comprehensive product catalog, shopping cart, and order management systems</li>
+                </ul>
+                <div className="flex flex-wrap gap-2 pt-4">
+                  <Badge
+                    variant="outline"
+                    className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    ASP.NET Core
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    Stripe Integration
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    Domain-Driven Design
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="border-blue-300 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors"
+                  >
+                    Performance Optimization
                   </Badge>
                 </div>
               </CardContent>
@@ -482,60 +681,105 @@ export default function Portfolio() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-16 px-4 sm:px-6 lg:px-8">
+      <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-serif font-bold text-3xl md:text-4xl text-center mb-12">Experience & Education</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <h2 className="font-serif font-bold text-4xl md:text-5xl text-center mb-16 bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">
+            Experience & Education
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h3 className="font-serif font-semibold text-xl mb-6">Professional Experience</h3>
-              <div className="space-y-6">
-                <Card>
+              <h3 className="font-serif font-semibold text-2xl mb-8 text-blue-600">Professional Experience</h3>
+              <div className="space-y-8">
+                <Card className="border-2 hover:border-blue-500/50 transition-colors bg-gradient-to-br from-card to-blue-50/20">
                   <CardHeader>
-                    <CardTitle className="text-lg">Marketing Team Head</CardTitle>
-                    <CardDescription>Enactus Fayoum • 2023-2025</CardDescription>
+                    <CardTitle className="text-xl flex items-center gap-2">
+                      <Users className="w-5 h-5 text-blue-600" />
+                      Marketing Team Head
+                    </CardTitle>
+                    <CardDescription className="text-lg">
+                      Enactus Fayoum | Student Organization • Sep 2024 - Aug 2025
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">
-                      Led marketing initiatives and team coordination for social entrepreneurship projects.
-                    </p>
+                    <ul className="text-sm text-muted-foreground space-y-2 list-disc list-inside">
+                      <li>Led team of 10+ students in social-impact campaigns</li>
+                      <li>Reached 5000+ community members through strategic marketing initiatives</li>
+                      <li>Organized workshops and mentored 15+ members</li>
+                      <li>Promoted to Head due to outstanding performance and leadership skills</li>
+                    </ul>
                   </CardContent>
                 </Card>
 
-                <Card>
+                <Card className="border-2 hover:border-blue-500/50 transition-colors bg-gradient-to-br from-card to-blue-50/20">
                   <CardHeader>
-                    <CardTitle className="text-lg">Sales & Operations Assistant</CardTitle>
-                    <CardDescription>Manahil Stationery Store • 2019-2023</CardDescription>
+                    <CardTitle className="text-xl flex items-center gap-2">
+                      <TrendingUp className="w-5 h-5 text-blue-600" />
+                      Sales & Operations Assistant
+                    </CardTitle>
+                    <CardDescription className="text-lg">
+                      Manahil Stationery Store | Fayoum, Egypt • Mar 2019 - Dec 2023
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">
-                      Managed sales operations and customer relations, developing strong problem-solving and
-                      communication skills.
-                    </p>
+                    <ul className="text-sm text-muted-foreground space-y-2 list-disc list-inside">
+                      <li>Achieved 95% customer satisfaction rating through excellent service</li>
+                      <li>Improved efficiency by 30% through POS optimization and process improvements</li>
+                      <li>Developed analytical skills through sales tracking and performance analysis</li>
+                      <li>Served 50+ customers daily with consistent quality service</li>
+                    </ul>
                   </CardContent>
                 </Card>
               </div>
             </div>
 
             <div>
-              <h3 className="font-serif font-semibold text-xl mb-6">Education & Certifications</h3>
-              <div className="space-y-6">
-                <Card>
+              <h3 className="font-serif font-semibold text-2xl mb-8 text-blue-600">Education & Certifications</h3>
+              <div className="space-y-8">
+                <Card className="border-2 hover:border-blue-500/50 transition-colors bg-gradient-to-br from-card to-blue-50/20">
                   <CardHeader>
-                    <CardTitle className="text-lg">B.Sc. Computer Science</CardTitle>
-                    <CardDescription>Fayoum University • Expected 2025</CardDescription>
+                    <CardTitle className="text-xl flex items-center gap-2">
+                      <Award className="w-5 h-5 text-blue-600" />
+                      Bachelor of Science
+                    </CardTitle>
+                    <CardDescription className="text-lg">
+                      Math & Computer Science, Fayoum University • Expected 2025
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">
-                      Relevant coursework: Data Structures, Database Systems, Software Engineering, OOP, Networks, Web
-                      Development
+                    <p className="text-sm text-muted-foreground mb-4">
+                      <strong>Relevant Coursework:</strong> Data Structures & Algorithms, Database Systems, Software
+                      Engineering, Object-Oriented Programming, Computer Networks, Web Development
                     </p>
                   </CardContent>
                 </Card>
 
-                <div className="space-y-3">
-                  <Badge className="block w-fit">Full Stack Web Development with .NET - ITI (2024)</Badge>
-                  <Badge className="block w-fit">ASP.NET Core API Development (.NET 8) - Udemy (2024)</Badge>
-                  <Badge className="block w-fit">Data Analysis Training - DEPI (2024)</Badge>
+                <div className="space-y-4">
+                  <h4 className="font-semibold text-lg text-blue-600">Professional Certifications</h4>
+                  <div className="space-y-3">
+                    <Badge className="block w-fit p-3 text-sm bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors">
+                      <strong>Full Stack Web Development with .NET</strong> - Information Technology Institute (ITI) -
+                      120 hours | Jul 2024 - Aug 2024
+                    </Badge>
+                    <Badge className="block w-fit p-3 text-sm bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors">
+                      <strong>ASP.NET Core API Development (.NET 8)</strong> - Udemy | 2024
+                    </Badge>
+                    <Badge className="block w-fit p-3 text-sm bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white transition-colors">
+                      <strong>Data Analysis Training Program</strong> - Digital Egypt Pioneers Initiative (DEPI) | Apr
+                      2024 - Oct 2024
+                    </Badge>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <h4 className="font-semibold text-lg text-blue-600">Languages</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline" className="border-blue-300 text-blue-700 px-3 py-1">
+                      Arabic - Native
+                    </Badge>
+                    <Badge variant="outline" className="border-blue-300 text-blue-700 px-3 py-1">
+                      English - Very Good
+                    </Badge>
+                  </div>
                 </div>
               </div>
             </div>
@@ -563,7 +807,7 @@ export default function Portfolio() {
                 </div>
                 <div className="flex items-center gap-4 p-4 bg-blue-50/50 rounded-lg border border-blue-200/50 hover:border-blue-500/50 transition-colors">
                   <Phone className="w-6 h-6 text-blue-600" />
-                  <span className="text-lg">+20 1015901207</span>
+                  <span className="text-lg">01015901207</span>
                 </div>
                 <div className="flex items-center gap-4 p-4 bg-blue-50/50 rounded-lg border border-blue-200/50 hover:border-blue-500/50 transition-colors">
                   <MapPin className="w-6 h-6 text-blue-600" />
@@ -575,7 +819,7 @@ export default function Portfolio() {
                   variant="outline"
                   size="lg"
                   className="gap-2 bg-transparent hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105 border-2 border-blue-600 text-blue-600"
-                  onClick={() => window.open("https://linkedin.com/in/omar-monir-kamal", "_blank")}
+                  onClick={() => window.open("https://www.linkedin.com/in/omarmonir", "_blank")}
                 >
                   <Linkedin className="w-5 h-5" />
                   LinkedIn
@@ -584,7 +828,7 @@ export default function Portfolio() {
                   variant="outline"
                   size="lg"
                   className="gap-2 bg-transparent hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105 border-2 border-blue-600 text-blue-600"
-                  onClick={() => window.open("https://github.com/omarmonir", "_blank")}
+                  onClick={() => window.open("https://github.com/OmarMonir", "_blank")}
                 >
                   <Github className="w-5 h-5" />
                   GitHub
@@ -628,7 +872,7 @@ export default function Portfolio() {
       <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-border bg-gradient-to-r from-muted/50 to-background">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-muted-foreground text-lg">
-            © 2025 Omar Monir Kamal. Built with passion for backend development.
+            © 2025 Omar Monir Elseofy. Built with passion for backend development.
           </p>
         </div>
       </footer>
